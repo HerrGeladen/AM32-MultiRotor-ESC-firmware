@@ -172,7 +172,7 @@
 //#define FIXED_DUTY_MODE_POWER 100     // 0-100 percent not used in fixed speed mode
 
 #define FIXED_SPEED_MODE  // bypasses input signal and runs at a fixed rpm using the speed control loop PID
-#define FIXED_SPEED_MODE_RPM 5000  // intended final rpm , ensure pole pair numbers are entered correctly in config tool.
+#define FIXED_SPEED_MODE_RPM 8000  // intended final rpm , ensure pole pair numbers are entered correctly in config tool.
 
 //#define BRUSHED_MODE         // overrides all brushless config settings, enables two channels for brushed control
 //#define GIMBAL_MODE     // also sinusoidal_startup needs to be on, maps input to sinusoidal angle.
@@ -183,7 +183,7 @@
 
 uint8_t drive_by_rpm = 0;
 uint32_t MAXIMUM_RPM_SPEED_CONTROL = 12000;
-uint32_t MINIMUM_RPM_SPEED_CONTROL = 2000;
+uint32_t MINIMUM_RPM_SPEED_CONTROL = 2000; 
 
  //assign speed control PID values values are x10000
  fastPID speedPid = {      //commutation speed loop time

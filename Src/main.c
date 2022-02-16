@@ -172,7 +172,7 @@
 //#define FIXED_DUTY_MODE_POWER 100     // 0-100 percent not used in fixed speed mode
 
 #define FIXED_SPEED_MODE  // bypasses input signal and runs at a fixed rpm using the speed control loop PID
-#define FIXED_SPEED_MODE_RPM 5000  // intended final rpm , ensure pole pair numbers are entered correctly in config tool.
+#define FIXED_SPEED_MODE_RPM 1000  // intended final rpm , ensure pole pair numbers are entered correctly in config tool.
 
 //#define BRUSHED_MODE         // overrides all brushless config settings, enables two channels for brushed control
 //#define GIMBAL_MODE     // also sinusoidal_startup needs to be on, maps input to sinusoidal angle.
@@ -218,7 +218,7 @@ char dir_reversed = 0;
 char comp_pwm = 1;
 char VARIABLE_PWM = 1;
 char bi_direction = 0;
-char stuck_rotor_protection = 1;	// Turn off for Crawlers
+char stuck_rotor_protection = 0;	// Turn off for Crawlers
 char brake_on_stop = 0;
 char stall_protection = 0;
 char use_sin_start = 0;
@@ -226,7 +226,7 @@ char TLM_ON_INTERVAL = 0;
 uint8_t telemetry_interval_ms = 30;
 uint8_t TEMPERATURE_LIMIT = 255;  // degrees 255 to disable
 char advance_level = 2;			// 7.5 degree increments 0 , 7.5, 15, 22.5)
-uint16_t motor_kv = 2000;
+uint16_t motor_kv = 850;
 char motor_poles = 14;
 uint16_t CURRENT_LIMIT = 202;
 uint8_t sine_mode_power = 5;

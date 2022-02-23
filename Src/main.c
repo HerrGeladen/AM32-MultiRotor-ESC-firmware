@@ -172,7 +172,7 @@
 //#define FIXED_DUTY_MODE_POWER 100     // 0-100 percent not used in fixed speed mode
 
 #define FIXED_SPEED_MODE  // bypasses input signal and runs at a fixed rpm using the speed control loop PID
-#define FIXED_SPEED_MODE_RPM 12000  // intended final rpm , ensure pole pair numbers are entered correctly in config tool.
+#define FIXED_SPEED_MODE_RPM 24000  // intended final rpm , ensure pole pair numbers are entered correctly in config tool.
 
 //#define BRUSHED_MODE         // overrides all brushless config settings, enables two channels for brushed control
 //#define GIMBAL_MODE     // also sinusoidal_startup needs to be on, maps input to sinusoidal angle.
